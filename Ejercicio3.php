@@ -16,6 +16,13 @@
     $multiplicacionNM = $N * $M;
     $divisionNM = $N / $M;
 
+    $dobleDeX = $x * 2;
+    $dobleDeY = $y * 2;
+    $dobleDeN = $N * 2;
+    $dobleDeM = $M * 2;
+    $sumaDeVaribales = $x + $y + $N + $M;
+    $miltiplicacionDeVariables = $x * $y * $N * $M;
+
     echo $sumaXY . "<br>";
     echo $restaXY . "<br>";
     echo $multiplicacionXY . "<br>";
@@ -26,13 +33,24 @@
     echo $multiplicacionNM . "<br>";
     echo $divisionNM . "<br>";  
 
-    function calculadora($x, $y) {
-        $suma = $x + $y;
-        $resta = $x - $y;
-        $multiplicacion = $x * $y;
-        $division = $x / $y;
-
-        return[$suma, $resta, $multiplicacion, $division];
+    $opcion = 0; //Ejemplo de una opcion que elija el usuario, siendo 1 - Suma, 2 - Resta, 3 - Multiplicacion, 4 - Division
+    function calculadora($x, $y, $opcion) {
+        switch ($option) {
+            case '1':
+                return $x + $y;
+                break;
+            case '2':
+                return $x - $y;
+                break;
+            case '3':
+                return $x * $y;
+                break;
+            case '4':
+                return $x / $y;
+                break;
+            default:
+                return "Elije una opcion valida por favor.";
+        }
     }
    
 

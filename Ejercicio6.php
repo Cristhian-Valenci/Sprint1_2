@@ -4,9 +4,9 @@
       
         rand(0, 1);
         if (rand() == 0) {
-            return true;
+            return "El perro te mordio";
         } else {
-            return false;
+            return "El perro NO te mordio";
         }
     }
 ?>
