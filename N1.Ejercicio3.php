@@ -33,26 +33,29 @@
     echo $multiplicacionNM . "<br>";
     echo $divisionNM . "<br>";  
 
-    $opcion = 0; //Ejemplo de una opcion que elija el usuario, siendo 1 - Suma, 2 - Resta, 3 - Multiplicacion, 4 - Division
-    function calculadora($x, $y, $opcion) {
-        switch ($option) {
-            case '1':
+    $opcion = "Suma"; //Ejemplo de una opcion que elija el usuario.
+    function calculadora($x, $y, string $opcion) {
+        switch ($opcion) {
+            case "Suma":
                 return $x + $y;
                 break;
-            case '2':
+            case "Resta":
                 return $x - $y;
                 break;
-            case '3':
+            case "Multiplicacion":
                 return $x * $y;
                 break;
-            case '4':
+            case "Division":
                 return $x / $y;
                 break;
             default:
                 return "Elije una opcion valida por favor.";
         }
+
+       
     }
    
+     echo calculadora($x, $y, $opcion);
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-    function gradoDelEstudiante($nota) {
+    function calcularGradoDelEstudiante($nota) {
         if ($nota >= 60) {
             return "Primera Division";
         } elseif ($nota >= 45) {
